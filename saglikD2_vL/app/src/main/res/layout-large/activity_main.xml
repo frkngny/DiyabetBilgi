@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainpage"
+    tools:ignore="MissingDefaultResource"
+    android:background="@drawable/main_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/top_bar"/>
+
+        <!-- egitim katolog buton -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/katologlarbutton"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="gotokatologlar"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/egitimkatologlari" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="85dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/egitim1"
+                android:onClick="gotokatologlar"/>
+        </RelativeLayout>
+
+        <!-- takip cizelgesi buton -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/takipcizelgebutton"
+            android:layout_below="@id/katologlarbutton"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="20dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/insulinkansekeritakipcizelgesi" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="85dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/takvim1"
+                tools:ignore="RtlHardcoded" />
+        </RelativeLayout>
+
+        <!-- alarm butonu -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/alarmbutton"
+            android:layout_below="@id/takipcizelgebutton"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="20dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/insulinkansekerialarm"
+                android:onClick="goToAlarm"/>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="85dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/alarm1"
+                tools:ignore="RtlHardcoded"
+                android:onClick="goToAlarm"/>
+        </RelativeLayout>
+
+        <!-- yillik kontrol butonu -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/kontrollerbutton"
+            android:layout_below="@id/alarmbutton"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="20dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/yillikkontrollerim" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="85dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/yillik1"
+                tools:ignore="RtlHardcoded" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

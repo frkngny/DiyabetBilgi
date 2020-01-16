@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/beslenme_page"
+    tools:ignore="MissingDefaultResource"
+    android:background="@drawable/beslenme_arkaplan">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- belsenme ilk foto -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/beslenme_ilk"
+                android:padding="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ilk_foto"
+                    app:srcCompat="@drawable/ilk_foto"
+                    android:layout_centerHorizontal="true" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/ilk_foto"
+                    app:srcCompat="@drawable/ilk_foto_altyaz_"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+
+            <!-- belsenme foto iki -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/beslenme_iki"
+                android:layout_below="@id/beslenme_ilk"
+                android:padding="10dp"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/foto_iki_ustyazi"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/foto_iki_yazi"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iki_foto"
+                    android:layout_below="@id/foto_iki_ustyazi"
+                    app:srcCompat="@drawable/foto_iki"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+
+            <!-- proteinler -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/proteinler"
+                android:layout_below="@id/beslenme_iki"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/proteins"
+                    android:text="PROTEİNLER"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorred"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/protyazi"
+                    android:text="* Hücrelerin esas yapısını oluştururlar. "
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/proteins"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/protaltigen"
+                    android:layout_below="@id/protyazi"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/foto_uc"/>
+            </RelativeLayout>
+
+            <!-- yaglar -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/yaglar"
+                android:layout_below="@id/proteinler"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YAĞLAR"
+                    android:textSize="28sp"
+                    android:textColor="@color/colorgreen"
+                    android:id="@+id/yaglaryazisi"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/yagyazi"
+                    android:text="* Hücrelerin esas yapısını oluştururlar. "
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/yaglaryazisi"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/yagtablo"
+                    android:layout_below="@id/yagyazi"
+                    app:srcCompat="@drawable/yaglartablo"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/yagfoto"
+                    android:layout_toEndOf="@id/yagtablo"
+                    android:layout_below="@id/yagyazi"
+                    app:srcCompat="@drawable/yaglarfoto"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/yagbilgiyazisi"
+                    android:layout_below="@id/yagtablo"
+                    android:layout_marginTop="20dp"
+                    android:text="Oda sıcaklığında sıvı halde olan;"
+                    android:textSize="24sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/aycicekyazi"
+                    android:layout_below="@id/yagbilgiyazisi"
+                    android:layout_marginTop="30dp"
+                    android:text="Ayçiçek,"
+                    android:textStyle="bold"
+                    android:textSize="24sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/misirozu"
+                    android:layout_below="@id/aycicekyazi"
+                    android:text="Mısırözü,"
+                    android:textStyle="bold"
+                    android:textSize="24sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/findikyagi"
+                    android:layout_below="@id/misirozu"
+                    android:text="Fındık yağı,"
+                    android:textStyle="bold"
+                    android:textSize="24sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/zeytinyagi"
+                    android:layout_below="@id/findikyagi"
+                    android:text="Zeytinyağı"
+                    android:textStyle="bold"
+                    android:textSize="24sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/zeytinyagi"
+                    android:text="gibi yaglar sağlıklı yağlardır."
+                    android:textSize="24sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/yagfotoiki"
+                    android:layout_below="@id/yagfoto"
+                    android:layout_toEndOf="@id/yagbilgiyazisi"
+                    android:layout_marginTop="50dp"
+                    app:srcCompat="@drawable/yaglarfoto_iki"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/yagfotoiki"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/katiyagyzi"
+                        android:text="Oda sıcaklığında katı halde olan;"
+                        android:textSize="24sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tereyag"
+                        android:layout_below="@id/katiyagyzi"
+                        android:layout_marginTop="30dp"
+                        android:text="Tereyağı,"
+                        android:textStyle="bold"
+                        android:textSize="24sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/margarin"
+                        android:layout_below="@id/tereyag"
+                        android:text="Margarin,"
+                        android:textStyle="bold"
+                        android:textSize="24sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/kuyrukyagi"
+                        android:layout_below="@id/margarin"
+                        android:text="Kuyrukyağı"
+                        android:textStyle="bold"
+                        android:textSize="24sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/kuyrukyagi"
+                        android:id="@+id/sonyazi"
+                        android:text="gibi yağlar kalp hastalıkları gibi önemli hastalıklara yol açabileceği için mümkün olduğunca tüketilmemelidir."
+                        android:textSize="24sp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sonyazi"
+                        app:srcCompat="@drawable/margarin"
+                        android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!-- karbonhidratlar -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/karbonhidratlar"
+                android:layout_below="@id/yaglar"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/karbonhidratlaryazisi"
+                    android:text="KARBONHİDRATLAR"
+                    android:textSize="28sp"
+                    android:textColor="@color/colorbrown"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/karbonhidrat_ilk_foto"
+                    android:layout_below="@id/karbonhidratlaryazisi"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/karbonhidratlar_ilk"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/karbonhidrattablo"
+                    android:layout_below="@id/karbonhidrat_ilk_foto"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/karbonhidrat_tablo"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/carbs"
+                    android:layout_below="@id/karbonhidrattablo"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/carbs"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/basit_karbonhidratlar"
+                    android:layout_below="@id/carbs">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/basitkarbs"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        app:srcCompat="@drawable/basitkarbonhids"/>
+
+                    <!-- yazilar -->
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/basitkarbs_yazi"
+                        android:layout_below="@id/basitkarbs"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sekeryazisi"
+                            android:text="Şeker,"
+                            android:textSize="24sp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sekerlitatlilaryazisi"
+                            android:layout_below="@id/sekeryazisi"
+                            android:text="Şekerli tatlılar,"
+                            android:textSize="24sp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/balyazisi"
+                            android:layout_below="@id/sekerlitatlilaryazisi"
+                            android:text="Bal,"
+                            android:textSize="24sp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/recelyazisi"
+                            android:layout_below="@id/balyazisi"
+                            android:text="Reçel,"
+                            android:textSize="24sp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/pekmezyazisi"
+                            android:layout_below="@id/recelyazisi"
+                            android:text="Pekmez,"
+                            android:textSize="24sp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/marmelatyazisi"
+                            android:layout_below="@id/pekmezyazisi"
+                            android:text="Marmelat."
+                            android:textSize="24sp"
+                            android:textStyle="bold"/>
+                    </RelativeLayout>
+
+                    <!-- seker fotosu -->
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/basitkarbs_yazi"
+                        android:layout_below="@id/basitkarbs"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginStart="20dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/sekerler"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <!-- kompleks karbonhidratlar -->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/kompleks_karbs"
+                    android:layout_below="@id/basit_karbonhidratlar"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/komplekskarb_yesil"
+                        app:srcCompat="@drawable/komplekskarbs"/>
+
+                    <!-- yazilar -->
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/komplekskarb_yazi"
+                        android:layout_below="@id/komplekskarb_yesil"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tamtanelitahillar"
+                            android:text="Tam taneli tahıllar,"
+                            android:textSize="24sp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tambugdayunu"
+                            android:layout_below="@id/tamtanelitahillar"
+                            android:text="Tam buğday unu,"
+                            android:textSize="24sp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ekmek"
+                            android:layout_below="@id/tambugdayunu"
+                            android:text="Ekmek,"
+                            android:textSize="24sp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/pilav"
+                            android:layout_below="@id/ekmek"
+                            android:text="Pilav,"
+                            android:textSize="24sp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/makarna"
+                            android:layout_below="@id/pilav"
+                            android:text="Makarna,"
+                            android:textSize="24sp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/bulgur"
+                            android:layout_below="@id/makarna"
+                            android:text="Bulgur,"
+                            android:textSize="24sp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/eriste"
+                            android:layout_below="@id/bulgur"
+                            android:text="Erişte,"
+                            android:textSize="24sp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/kurubaklagiller"
+                            android:layout_below="@id/eriste"
+                            android:text="Kurubaklagiller,"
+                            android:textSize="24sp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sebz_meyv"
+                            android:layout_below="@id/kurubaklagiller"
+                            android:text="Sebze ve meyveler en iyi karbonhidrat kaynaklarıdır"
+                            android:textSize="24sp"
+                            android:textStyle="bold"/>
+                    </RelativeLayout>
+
+                    <!-- ekmek foto -->
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/komplekskarb_yesil"
+                        android:layout_marginTop="30dp"
+                        android:layout_alignParentEnd="true">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ekmek_tahil"/>
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <!-- vitamin ve mineraller -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/vit_min"
+                android:layout_below="@id/karbonhidratlar"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/vitminyazi"
+                    android:text="VİTAMİN VE MİNERALLER"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorpurple"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/vitminfoto"
+                    android:layout_below="@id/vitminyazi"
+                    app:srcCompat="@drawable/vitamin_mineral"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/vitminyazi1"
+                    android:layout_below="@id/vitminfoto"
+                    android:layout_marginTop="20dp"
+                    android:text="► İnsan vücudunda oldukça az miktarlarda bulunmalarına rağmen vücuttaki görevleri oldukça fazladır."
+                    android:textSize="22sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/vitminyazi2"
+                    android:layout_below="@id/vitminyazi1"
+                    android:layout_marginTop="20dp"
+                    android:text="► Yeterli ve dengeli beslendiğimizde bizim için gereken vitamin ve mineralleri yiyeceklerle alırız."
+                    android:textSize="22sp"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+            <!-- su -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/su"
+                android:layout_below="@id/vit_min"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/suyazisi"
+                    android:text="Su"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorblue"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/su_foto"
+                    android:layout_below="@id/suyazisi"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@drawable/sufoto"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/suyazi1"
+                    android:layout_below="@id/su_foto"
+                    android:text="► Vücudumuzun yarısından fazlası sudur."
+                    android:textSize="22sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/suyazi2"
+                    android:layout_below="@id/suyazi1"
+                    android:text="► Bu nedenle besinlerle aldığımızın dışında günde 1-2 litre su ve sulu içecekler alınmalıdır."
+                    android:textSize="22sp"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+            <!-- posa lif -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/posa_lif"
+                android:layout_below="@id/su"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/poslif_baslik"
+                    android:text="POSA/LİF"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colororange"/>
+
+                <!-- yazilar -->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/posalifyazilar"
+                    android:layout_below="@id/poslif_baslik"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/posalif_yazi1"
+                        android:text="► Besinlerin sindirilmeden atılan kısmıdır."
+                        android:textSize="22sp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/posalif_yazi2"
+                        android:layout_below="@id/posalif_yazi1"
+                        android:text="► Elma, greyfurt, limon, portakal gibi meyveler, yulaf, kuru baklagiller ve birçok sebze çözünür posa içerir."
+                        android:textSize="22sp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/posalif_yazi3"
+                        android:layout_below="@id/posalif_yazi2"
+                        android:text="► Posanın bu türü:"
+                        android:textSize="22sp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/posalif_yazi4"
+                        android:layout_below="@id/posalif_yazi3"
+                        android:text="- Mide boşalmasını geciktirir,"
+                        android:textSize="22sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/posalif_yazi5"
+                        android:layout_below="@id/posalif_yazi4"
+                        android:text="- Karbonhidratların sindirimini yavaşlatır,"
+                        android:textSize="22sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/posalif_yazi6"
+                        android:layout_below="@id/posalif_yazi5"
+                        android:text="- Kan şekeri ve kan yağlarının kontrolünü sağlar"
+                        android:textSize="22sp" />
+
+                </RelativeLayout>
+
+                <!-- devam -->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/posalif_devam"
+                    android:layout_below="@id/posalifyazilar"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/posatuketim"
+                        android:text="Posa Tüketimini Artırmak İçin;"
+                        android:textSize="24sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/posatuketim_yazi1"
+                        android:layout_below="@id/posatuketim"
+                        android:layout_marginTop="10dp"
+                        android:text="► Beyaz ekmek yerine tam tahıl, yulaf veya çavdar ekmeği,"
+                        android:textSize="22sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/posatuketim_yazi2"
+                        android:layout_below="@id/posatuketim_yazi1"
+                        android:text="► Pirinç veya makarna yerine bulgur,"
+                        android:textSize="22sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/posatuketim_yazi3"
+                        android:layout_below="@id/posatuketim_yazi2"
+                        android:text="► Meyve suyu yerine meyve tüketilmeli,"
+                        android:textSize="22sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/posatuketim_yazi4"
+                        android:layout_below="@id/posatuketim_yazi3"
+                        android:text="► Kabuğu ile yenilebilen meyvelerin kabuğu soyulmamalı, iyice yıkandıktan sonra kabuğu ile birlikte yenilmeli,"
+                        android:textSize="22sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/posatuketim_yazi5"
+                        android:layout_below="@id/posatuketim_yazi4"
+                        android:text="► Öğünlerde mutlaka sebze ve salata tüketilmeli,"
+                        android:textSize="22sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/posatuketim_yazi6"
+                        android:layout_below="@id/posatuketim_yazi5"
+                        android:text="► Haftada 2-3 defa kuru baklagil yenmelidir."
+                        android:textSize="22sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/posatuketim_yazi6"
+                        android:layout_marginTop="10dp"
+                        app:srcCompat="@drawable/posalif_meyveler"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <!-- besin gruplari -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/besin_gruplari"
+                android:layout_below="@id/posa_lif"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/besingruplari_baslik"
+                    android:text="BESİN GRUPLARI"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorpurple"/>
+
+                <!-- yazilar -->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/besingruplariyazilar"
+                    android:layout_below="@id/besingruplari_baslik"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/besingruplari_yazi1"
+                        android:text="► Her bir besin grubunun besin ögesi içeriği farklıdır."
+                        android:textSize="22sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/besingruplari_yazi2"
+                        android:layout_below="@id/besingruplari_yazi1"
+                        android:text="► Soframızda ve tabağımızdaki besinler çeşitlendirilmelidir."
+                        android:textSize="22sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/besingruplari_yazi3"
+                        android:layout_below="@id/besingruplari_yazi2"
+                        android:text="► Tabağımızda yer alması gereken besinlerde porsiyon kontrolü sağlanmalıdır."
+                        android:textSize="22sp"/>
+
+                </RelativeLayout>
+
+                <!-- devam -->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/besingruplariyazilar"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/besin_koseli"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/besin_koseli"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

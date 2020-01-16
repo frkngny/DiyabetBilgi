@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/kan_sekeri_olcum_page"
+    tools:ignore="MissingDefaultResource">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- el yikama -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/elyikama"
+                android:padding="10dp"
+                android:layout_marginTop="50dp">
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@drawable/elleryikanacak"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:layout_gravity="center"
+                    android:text="Eller Yıkanacak"
+                    android:background="@color/lightpink"/>
+
+
+            </LinearLayout>
+
+            <!-- el ovusturma -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ovusturma"
+                android:padding="10dp"
+                android:layout_below="@id/elyikama">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:layout_gravity="center"
+                    android:text="Eller Ovusturulacak"
+                    android:background="@color/colorblue"/>
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@drawable/ellerovusturulacak"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <!-- malzemeler -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/malzeme"
+                android:padding="10dp"
+                android:layout_below="@id/ovusturma">
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@drawable/malzemeler"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="21sp"
+                    android:layout_gravity="center"
+                    android:text="Malzemeler Hazırlanacak"
+                    android:background="@color/colorpurple"/>
+
+            </LinearLayout>
+
+            <!-- olcum cubugu -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/olcumcubuk"
+                android:padding="10dp"
+                android:layout_below="@id/malzeme">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:text="Ölçüm çubuğu cihaza takılacak"
+                    android:background="@color/lightpink"/>
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/olcumcubugu" />
+
+            </LinearLayout>
+
+            <!-- parmak delme -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/parmak"
+                android:padding="10dp"
+                android:layout_below="@id/olcumcubuk">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:text="Parmak delinecek"
+                    android:background="@color/colorblue"/>
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@drawable/parmakdelme"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <!-- kan silme -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/kansilme"
+                android:padding="10dp"
+                android:layout_below="@id/parmak">
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@drawable/kansilme"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:text="İlk çıkan kan silinecek, tok bir damla kan çubuğa dik bir şekilde emdirilecek"
+                    android:background="@color/colorpurple"/>
+
+            </LinearLayout>
+
+            <!-- uyari -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/uyari"
+                android:padding="10dp"
+                android:layout_below="@id/kansilme">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/uyariresim"
+                    app:srcCompat="@drawable/uyari"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_vertical"/>
+
+            </RelativeLayout>
+            <!-- uyari metinleri -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/uyarimetin"
+                android:padding="10dp"
+                android:background="@color/lightpink"
+                android:layout_below="@id/uyari">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/aaa"
+                    android:textStyle="bold"
+                    android:text=" * Parmak alkolle silinmemelidir, silinirse de kuruması beklenmelidir"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_below="@id/aaa"
+                    android:id="@+id/aab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text=" * Delici içerisindeki iğne 4-5 ölçümde bir değiştirilmelidir"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_below="@id/aab"
+                    android:id="@+id/aac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text=" * Kullanılan iğne ve stripler pet şişelerde biriktirilip o şekilde çöpe atılmalıdır"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_below="@id/aac"
+                    android:id="@+id/aad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text=" * Delme işleminde tüm parmaklar kullanılmalı, parmağın uç-yan kısımları delinmelidir"
+                    android:textSize="20sp"/>
+
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/saklama_page"
+    tools:ignore="MissingDefaultResource"
+    android:background="@drawable/insulin_uyg_background">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- saklama fotolar  -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/saklama_fotolar"
+                android:padding="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/buzdolabi"
+                    app:srcCompat="@drawable/buzdolabi"
+                     android:layout_centerHorizontal="true"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/saklama_cantasi"
+                    android:layout_below="@id/buzdolabi"
+                    app:srcCompat="@drawable/saklamacantasi"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/saklama_yazilar"
+                android:layout_below="@id/saklama_fotolar"
+                android:layout_marginTop="20dp"
+                android:padding="5dp"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/yazi1"
+                    android:text=" ► İnsülinler 2-8 C arasında, buzdolabında saklanır."
+                    android:textSize="21sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/yazi2"
+                    android:layout_below="@id/yazi1"
+                    android:text=" ► Açıldıktan sonra buzdolabında 28 gün durabilir."
+                    android:textSize="21sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/yazi3"
+                    android:layout_below="@id/yazi2"
+                    android:text=" ► Araba uçak bagajına konulmamalı, her koşulda buz aküsüyle taşınmalıdır."
+                    android:textSize="21sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/yazi4"
+                    android:layout_below="@id/yazi3"
+                    android:text=" ► Renk değişikliği, kristalleşme, partikül görülürse kullanılmamalıdır."
+                    android:textSize="21sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/yazi5"
+                    android:layout_below="@id/yazi4"
+                    android:text=" ► Son kullanma tarihine dikkat edilmelidir."
+                    android:textSize="21sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/yazi5"
+                    android:text=" ► İnsülinler dondurulmamalıdır."
+                    android:textSize="21sp"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

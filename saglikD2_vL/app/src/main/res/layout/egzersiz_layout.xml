@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/egz_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/egz_1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/egz_yazi1"
+                    android:id="@+id/egz_yazi1"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/egz_kosu"
+                    android:id="@+id/egz_kosu"
+                    android:layout_below="@id/egz_yazi1"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/egz_ip_cekme"
+                    android:layout_below="@id/egz_yazi1"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@id/egz_kosu"
+                    android:id="@+id/egz_ip"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="150 kkal harcatan egzersiz örnekleri;"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:id="@+id/egz_orn_yazi"
+                    android:layout_below="@id/egz_ip"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/egz_table1"
+                    android:layout_below="@id/egz_orn_yazi"
+                    app:srcCompat="@drawable/egz_table1"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/egz_1"
+                android:id="@+id/egz_2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/egz_oneri_yazi"
+                    android:text="EGZERSİZ ÖNERİLERİ"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorblue"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/egz_onerileri"
+                    android:id="@+id/egz_oneri"
+                    android:layout_below="@id/egz_oneri_yazi"/>
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/egz_oneri"
+                android:id="@+id/uyari_yazi1"
+                android:text="Aşırı yorgunluk veya aşağıdaki bulgular varsa egzersiz hemen bırakılmalıdır: "
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/uyari_yazi1"
+                    android:id="@+id/uyari_yazi2"
+                    android:text="► Baş dönmesi ve sendeleme,"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/uyari_yazi2"
+                    android:id="@+id/uyari_yazi3"
+                    android:text="► Göğüste sıkışma, dolgunluk, ağırlık hissi, rahatsızlık veya ağrı,"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/uyari_yazi3"
+                    android:id="@+id/uyari_yazi4"
+                    android:text="► Beklenmedik ve ciddi nefes darlığı,"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/uyari_yazi4"
+                    android:id="@+id/uyari_yazi5"
+                    android:text="► Bulantı."
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/uyari_yazi5"
+                    app:srcCompat="@drawable/egz_uyari"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/egz_2"
+                android:id="@+id/egz_3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/egz_dikkat_yazi"
+                    android:text="DİKKAT EDİLMESİ GEREKENLER"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorbrown"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:layout_below="@id/egz_dikkat_yazi"
+                    android:id="@+id/egz_dikkat1"
+                    app:srcCompat="@drawable/egz_dikkat"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/egz_dikkat_yazi2"
+                    android:layout_below="@id/egz_dikkat1"
+                    android:layout_centerHorizontal="true"
+                    android:text="DOKTOR KONTROLÜNÜ UNUTMAYIN..."
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorblue"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/egz_3"
+                android:id="@+id/egz_4"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/egz_dikkat_yazi3"
+                    android:layout_centerHorizontal="true"
+                    android:text="Aşağıdaki durumlarda egzersiz yapılması sakıncalı olabilir, mutlaka bir hekime gidilmelidir !!"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/egz_4_1"
+                    android:layout_below="@id/egz_dikkat_yazi3"
+                    android:text="► Kan glikoz düzeylerinin ayarsız olması,"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/egz_4_2"
+                    android:layout_below="@id/egz_4_1"
+                    android:text="► Duyu kaybına yol açan ağır nöropati,"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/egz_4_3"
+                    android:layout_below="@id/egz_4_2"
+                    android:text="► Aktif kalp-damar hastalıkları,"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/egz_4_4"
+                    android:layout_below="@id/egz_4_3"
+                    android:text="► İlerleyici retinopati (zorlayıcı egzersizler yapılmamalıdır.)"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/egz_4_5"
+                    android:layout_below="@id/egz_4_4"
+                    android:text="► Göz içi kanamaları,"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/egz_4_6"
+                    android:layout_below="@id/egz_4_5"
+                    android:text="► Hipoglisemiyi hissedememe."
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

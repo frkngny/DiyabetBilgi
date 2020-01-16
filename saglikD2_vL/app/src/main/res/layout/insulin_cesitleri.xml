@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/siringalar_page"
+    tools:ignore="MissingDefaultResource"
+    android:background="@drawable/insulin_uyg_background">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <!-- bolge bir -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/siringalar_ilk"
+            android:padding="10dp"
+            android:layout_marginTop="20dp">
+
+
+            <!-- 1 -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/siringalar_1">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/siringalar_bir"
+                    android:onClick="show1"
+                    app:srcCompat="@drawable/siringalar_1"
+                    android:layout_centerHorizontal="true"/>
+
+                <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                    android:id="@+id/mycontent1"
+                    android:layout_below="@id/siringalar_bir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:ael_expanded="false"
+                    app:ael_duration="500"
+                    app:ael_interpolator="accelerate"
+                    app:ael_orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/siringalar_bir_aciklama"
+                        app:srcCompat="@drawable/siringalar1_aciklama"
+                        android:layout_centerHorizontal="true"/>
+
+                </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+            </RelativeLayout>
+
+            <!-- 2 -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/siringalar_2"
+                android:layout_below="@id/siringalar_1">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/siringalar_iki"
+                    android:onClick="show2"
+                    app:srcCompat="@drawable/siringalar_2"
+                    android:layout_centerHorizontal="true"/>
+
+                <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                    android:id="@+id/mycontent2"
+                    android:layout_below="@id/siringalar_iki"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:ael_expanded="false"
+                    app:ael_duration="500"
+                    app:ael_interpolator="accelerate"
+                    app:ael_orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/siringalar_iki_aciklama"
+                        app:srcCompat="@drawable/siringalar2_aciklama"
+                        android:layout_centerHorizontal="true"/>
+
+                </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+            </RelativeLayout>
+
+            <!-- 3 -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/siringalar_3"
+                android:layout_below="@id/siringalar_2">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/siringalar_uc"
+                    android:onClick="show3"
+                    app:srcCompat="@drawable/siringalar_3"
+                    android:layout_centerHorizontal="true"/>
+
+                <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                    android:id="@+id/mycontent3"
+                    android:layout_below="@id/siringalar_uc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:ael_expanded="false"
+                    app:ael_duration="500"
+                    app:ael_interpolator="accelerate"
+                    app:ael_orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/siringalar_uc_aciklama"
+                        app:srcCompat="@drawable/siringalar3_aciklama"
+                        android:layout_centerHorizontal="true"/>
+
+                </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+            </RelativeLayout>
+
+            <!-- 4 -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/siringalar_4"
+                android:layout_below="@id/siringalar_3">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/siringalar_dort"
+                    android:onClick="show4"
+                    app:srcCompat="@drawable/siringalar_4"
+                    android:layout_centerHorizontal="true"/>
+
+                <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                    android:id="@+id/mycontent4"
+                    android:layout_below="@id/siringalar_dort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:ael_expanded="false"
+                    app:ael_duration="500"
+                    app:ael_interpolator="accelerate"
+                    app:ael_orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/siringalar_dort_aciklama"
+                        app:srcCompat="@drawable/siringalar4_aciklama"
+                        android:layout_centerHorizontal="true"/>
+
+                </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+            </RelativeLayout>
+
+            <!-- 5 -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/siringalar_5"
+                android:layout_below="@id/siringalar_4">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/siringalar_bes"
+                    android:onClick="show5"
+                    app:srcCompat="@drawable/siringalar_5"
+                    android:layout_centerHorizontal="true"/>
+
+                <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                    android:id="@+id/mycontent5"
+                    android:layout_below="@id/siringalar_bes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:ael_expanded="false"
+                    app:ael_duration="500"
+                    app:ael_interpolator="accelerate"
+                    app:ael_orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/siringalar_bes_aciklama"
+                        app:srcCompat="@drawable/siringalar5_aciklama"
+                        android:layout_centerHorizontal="true"/>
+
+                </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            </RelativeLayout>
+
+            <!-- 6 -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/siringalar_6"
+                android:layout_below="@id/siringalar_5">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/siringalar_alti"
+                    android:onClick="show6"
+                    app:srcCompat="@drawable/siringalar_6"
+                    android:layout_centerHorizontal="true"/>
+
+                <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                    android:id="@+id/mycontent6"
+                    android:layout_below="@id/siringalar_alti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:ael_expanded="false"
+                    app:ael_duration="500"
+                    app:ael_interpolator="accelerate"
+                    app:ael_orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/siringalar_alti_aciklama"
+                        app:srcCompat="@drawable/siringalar6_aciklama"
+                        android:layout_centerHorizontal="true"/>
+
+                </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            </RelativeLayout>
+
+
+            <!-- 7 -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/siringalar_7"
+                android:layout_below="@id/siringalar_6">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/siringalar_yedi"
+                    android:onClick="show7"
+                    app:srcCompat="@drawable/siringalar_7"
+                    android:layout_centerHorizontal="true"/>
+
+                <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                    android:id="@+id/mycontent7"
+                    android:layout_below="@id/siringalar_yedi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:ael_expanded="false"
+                    app:ael_duration="500"
+                    app:ael_interpolator="accelerate"
+                    app:ael_orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/siringalar_yedi_aciklama"
+                        app:srcCompat="@drawable/siringalar7_aciklama"
+                        android:layout_centerHorizontal="true"/>
+
+                </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            </RelativeLayout>
+
+
+            <!-- 8 -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/siringalar_8"
+                android:layout_below="@id/siringalar_7">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/siringalar_sekiz"
+                    android:onClick="show8"
+                    app:srcCompat="@drawable/siringalar_8"
+                    android:layout_centerHorizontal="true"/>
+
+                <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                    android:id="@+id/mycontent8"
+                    android:layout_below="@id/siringalar_sekiz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:ael_expanded="false"
+                    app:ael_duration="500"
+                    app:ael_interpolator="accelerate"
+                    app:ael_orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/siringalar_sekiz_aciklama"
+                        app:srcCompat="@drawable/siringalar8_aciklama"
+                        android:layout_centerHorizontal="true"/>
+
+                </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            </RelativeLayout>
+
+
+            <!-- 9 -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/siringalar_9"
+                android:layout_below="@id/siringalar_8">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/siringalar_dokuz"
+                    android:onClick="show9"
+                    app:srcCompat="@drawable/siringalar_9"
+                    android:layout_centerHorizontal="true"/>
+
+                <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                    android:id="@+id/mycontent9"
+                    android:layout_below="@id/siringalar_dokuz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:ael_expanded="false"
+                    app:ael_duration="500"
+                    app:ael_interpolator="accelerate"
+                    app:ael_orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/siringalar_dokuz_aciklama"
+                        app:srcCompat="@drawable/siringalar9_aciklama"
+                        android:layout_centerHorizontal="true"/>
+
+                </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

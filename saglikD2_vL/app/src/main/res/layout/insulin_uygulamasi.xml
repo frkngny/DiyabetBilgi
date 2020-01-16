@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/insulin_uyg_page"
+    tools:ignore="MissingDefaultResource"
+    android:background="@drawable/insulin_uyg_background">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="50dp">
+
+            <!-- insulin çeşitleri -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ins_cesitleri"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="95dp"
+                    app:srcCompat="@drawable/insulincesitleri1"
+                    android:layout_gravity="center_vertical"/>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/insulincesitleributon"
+                    android:layout_gravity="center_vertical"
+                    android:onClick="gotoinsulincesitleri"/>
+            </LinearLayout>
+
+            <!-- insulin uyg bolgeleri -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/insulinuygbolgeleri"
+                android:padding="10dp"
+                android:layout_below="@id/ins_cesitleri">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="95dp"
+                    app:srcCompat="@drawable/insulinuygbolgeleri1"
+                    android:layout_gravity="center_vertical"/>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/insulinuygulamabolgeleributon"
+                    android:layout_gravity="center_vertical"
+                    android:onClick="gotoinsulinbolgeleri"/>
+            </LinearLayout>
+
+            <!-- insulin saklama -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/inssaklama"
+                android:padding="10dp"
+                android:layout_below="@id/insulinuygbolgeleri">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="95dp"
+                    app:srcCompat="@drawable/insulinsaklama1"
+                    android:layout_gravity="center_vertical"/>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/insulinsaklamabuton"
+                    android:layout_gravity="center_vertical"
+                    android:onClick="gotoinsulinsaklama"/>
+            </LinearLayout>
+
+            <!-- video -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ins_uyg_vid"
+                android:padding="10dp"
+                android:layout_below="@id/inssaklama">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="95dp"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/uygvideo1" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/insulinuygvideobuton"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

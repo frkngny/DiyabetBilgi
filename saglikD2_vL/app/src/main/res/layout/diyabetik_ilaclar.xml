@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ilaclar_page"
+    tools:ignore="MissingDefaultResource"
+    android:background="@drawable/ilaclar_background">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- bolge bir -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/beslenme_ilk"
+                android:padding="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/ilaclar_bir"
+                    app:srcCompat="@drawable/ilaclar_1"
+                    android:layout_centerHorizontal="true" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/ilaclar_bir"
+                    android:id="@+id/ilaclar_iki"
+                    app:srcCompat="@drawable/ilaclar_2"
+                    android:layout_centerHorizontal="true"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/ilaclar_iki"
+                    android:id="@+id/ilaclar_uc"
+                    app:srcCompat="@drawable/ilaclar_3"
+                    android:layout_centerHorizontal="true"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/ilaclar_uc"
+                    android:id="@+id/ilaclar_dort"
+                    app:srcCompat="@drawable/ilaclar_4"
+                    android:layout_centerHorizontal="true"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/ilaclar_bes"
+                    android:layout_below="@id/ilaclar_dort"
+                    app:srcCompat="@drawable/ilaclar_5"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/ilaclar_alti"
+                    android:layout_below="@id/ilaclar_bes"
+                    app:srcCompat="@drawable/ilaclar_6"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/ilaclar_alti"
+                    app:srcCompat="@drawable/ilaclar_7"/>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

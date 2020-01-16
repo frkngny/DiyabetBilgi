@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/egitim_katolog_page"
+    tools:ignore="MissingDefaultResource">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- kan sekeri -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/kansekeri"
+                android:padding="10dp"
+                android:layout_marginTop="50dp">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="95dp"
+                    app:srcCompat="@drawable/kansekeri1"
+                    android:layout_gravity="center_vertical"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/kansekeributon"
+                    android:layout_gravity="center_vertical"
+                    android:onClick="gotokansekeriolcum"/>
+            </LinearLayout>
+
+            <!-- insulin uyg -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/insulinuyg"
+                android:padding="10dp"
+                android:layout_below="@id/kansekeri">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="95dp"
+                    app:srcCompat="@drawable/insulin1"
+                    android:layout_gravity="center_vertical"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/insulinbutton"
+                    android:layout_gravity="center_vertical"
+                    android:onClick="gotoinsulinguyg"/>
+            </LinearLayout>
+
+            <!-- beslenme -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/beswlenme"
+                android:padding="10dp"
+                android:layout_below="@id/insulinuyg">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="95dp"
+                    app:srcCompat="@drawable/beslenme1"
+                    android:layout_gravity="center_vertical"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/beslenmebutton"
+                    android:layout_gravity="center_vertical"
+                    android:onClick="gotobeslenme"/>
+            </LinearLayout>
+
+            <!-- oralilaclar -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/oralilaclar"
+                android:padding="10dp"
+                android:layout_below="@id/beswlenme">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="95dp"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/ilaclar1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/oralantidiyabetikilaclarbuton"
+                    android:layout_gravity="center_vertical"
+                    android:onClick="gotoilaclar"/>
+            </LinearLayout>
+
+            <!-- egzersiz -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/egzersiz"
+                android:padding="10dp"
+                android:layout_below="@id/oralilaclar">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="95dp"
+                    app:srcCompat="@drawable/egzersiz1"
+                    android:layout_gravity="center_vertical"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/egzersizbuton"
+                    android:layout_gravity="center_vertical"
+                    android:onClick="gotoegzersiz"/>
+            </LinearLayout>
+
+            <!-- hipoglisemi -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hipoglisemi"
+                android:padding="10dp"
+                android:layout_below="@id/egzersiz">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="95dp"
+                    app:srcCompat="@drawable/hipoglisemi1"
+                    android:layout_gravity="center_vertical"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/hipoglisemibuton"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+            <!-- hiperglisemi -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hiperglisemi"
+                android:padding="10dp"
+                android:layout_below="@id/hipoglisemi">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="95dp"
+                    app:srcCompat="@drawable/hiperglisemi1"
+                    android:layout_gravity="center_vertical"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/hipergilsemibuton"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+            <!-- beslenme -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ayakbakimi"
+                android:padding="10dp"
+                android:layout_below="@id/hiperglisemi">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="95dp"
+                    app:srcCompat="@drawable/ayakbakimi1"
+                    android:layout_gravity="center_vertical"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ayakbakimibuton"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
